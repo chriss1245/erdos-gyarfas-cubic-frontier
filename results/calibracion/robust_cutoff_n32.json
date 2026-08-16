@@ -1,0 +1,15 @@
+{
+  "n": 32,
+  "forbid": [
+    4,
+    8,
+    16
+  ],
+  "count": 0,
+  "status": "UNSAT",
+  "elapsed": 606.64,
+  "returncode": 20,
+  "cmd": "/home/ubuntu/.local/bin/smsg --vertices 32 --all-graphs --connected --hide-graphs --cutoff 200000 --forbidden-subgraph-file /tmp/eg_cyc_4_8_16.txt --dimacs /tmp/eg_cnf_n32_3_sequential.cnf",
+  "stdout_tail": "The output might contain isomorphic copies of the same graph. Set 'cutoff' to 0 to avoid this potentially resulting in a performance loss.\nNumber of graphs: 0\nMaximal depth: 2225\nAverage depth: 258.787010\nStatistics for MinimalityChecker:\n\tCalls: 224856\n\tTime in seconds: 325.3300\n\tAdded clauses: 164731\nStatistics for ConnectedChecker:\n\tCalls: 12619\n\tTime in seconds: 0.0541\n\tAdded clauses: 0\nStatistics for ForbiddenSubgraphCheckerGlasgow:\n\tCalls: 122342\n\tTime in seconds: 52.8668\n\tAdded clauses: 82870\nResult: 20\nTotal time: 606.034232\n",
+  "stderr_tail": ""
+}

@@ -1,0 +1,1 @@
+n=22: 7319447 cubicos conexos, 52781 sin C16

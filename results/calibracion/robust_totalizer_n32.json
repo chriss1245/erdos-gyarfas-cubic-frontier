@@ -1,0 +1,15 @@
+{
+  "n": 32,
+  "forbid": [
+    4,
+    8,
+    16
+  ],
+  "count": 0,
+  "status": "UNSAT",
+  "elapsed": 621.23,
+  "returncode": 20,
+  "cmd": "/home/ubuntu/.local/bin/smsg --vertices 32 --all-graphs --connected --hide-graphs --cutoff 0 --forbidden-subgraph-file /tmp/eg_cyc_4_8_16.txt --dimacs /tmp/eg_cnf_n32_3_totalizer.cnf",
+  "stdout_tail": "Number of graphs: 0\nMaximal depth: 2318\nAverage depth: 272.176601\nStatistics for MinimalityChecker:\n\tCalls: 226929\n\tTime in seconds: 298.8593\n\tAdded clauses: 160274\nStatistics for ConnectedChecker:\n\tCalls: 10154\n\tTime in seconds: 0.0394\n\tAdded clauses: 0\nStatistics for ForbiddenSubgraphCheckerGlasgow:\n\tCalls: 131302\n\tTime in seconds: 54.6117\n\tAdded clauses: 87616\nResult: 20\nTotal time: 620.510593\n",
+  "stderr_tail": ""
+}

@@ -1,0 +1,1 @@
+[dump0] FIN: 758,347 grafos, 6656 sin C16, 957.6s (792/s)

@@ -1,0 +1,13 @@
+{
+  "n": 18,
+  "forbid": [
+    16
+  ],
+  "count": 1471,
+  "status": "SAT",
+  "elapsed": 27.84,
+  "returncode": 20,
+  "cmd": "/home/ubuntu/.local/bin/smsg --vertices 18 --all-graphs --connected --hide-graphs --cutoff 0 --forbidden-subgraph-file /tmp/eg_cyc_16.txt --dimacs /tmp/eg_cnf_n18_3_totalizer.cnf",
+  "stdout_tail": "Number of graphs: 1471\nMaximal depth: 824\nAverage depth: 346.067466\nStatistics for MinimalityChecker:\n\tCalls: 46606\n\tTime in seconds: 10.4618\n\tAdded clauses: 25373\nStatistics for ConnectedChecker:\n\tCalls: 20925\n\tTime in seconds: 0.0409\n\tAdded clauses: 12\nStatistics for ForbiddenSubgraphCheckerGlasgow:\n\tCalls: 23846\n\tTime in seconds: 8.0969\n\tAdded clauses: 20548\nResult: 20\nTotal time: 27.741617\n",
+  "stderr_tail": ""
+}

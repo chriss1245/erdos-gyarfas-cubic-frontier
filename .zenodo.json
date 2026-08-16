@@ -1,0 +1,34 @@
+{
+  "title": "Erdős–Gyárfás conjecture: calibrated SAT-modulo-symmetries verification for cubic graphs on at most 40 vertices",
+  "upload_type": "software",
+  "description": "Code, data and logs for the computational result: every connected cubic graph on at most 40 vertices contains a cycle of length 4, 8 or 16; consequently a smallest cubic counterexample to the Erdős–Gyárfás conjecture has at least 42 vertices. SAT modulo symmetries with a Glasgow subgraph-solver propagator, calibrated against thirteen exhaustive reference censuses (nine nonzero, up to 52781 C16-free cubic graphs at order 22), with set-level comparison against independent enumeration, a totalizer re-decision of the headline order, and positive controls at and beyond the frontier. Includes the complete July 2026 independent enumeration apparatus (n=30, 348.7 core-hours) used as ground truth.",
+  "creators": [
+    {
+      "name": "Manzano Vimos, Christopher Andre",
+      "affiliation": "WhiteBox ML, Madrid",
+      "orcid": "0009-0000-4270-4610"
+    }
+  ],
+  "access_right": "restricted",
+  "license": "MIT",
+  "keywords": [
+    "Erdős–Gyárfás conjecture",
+    "cubic graphs",
+    "power-of-two cycles",
+    "SAT modulo symmetries",
+    "graph enumeration",
+    "Erdős problem 64"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/christopher-manzanovimos_geci/erdos-gyarfas-cubic-frontier",
+      "resource_type": "software"
+    },
+    {
+      "relation": "cites",
+      "identifier": "10.5281/zenodo.21190438",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+[n22c5] tot=8796 sinC16=8796 mal_n=0 mal_grado=0

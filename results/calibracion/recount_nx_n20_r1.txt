@@ -1,0 +1,1 @@
+[n20r1] tot=62826 sinC16=1315 mal_n=0 mal_grado=0

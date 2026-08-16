@@ -1,0 +1,585 @@
+
+--SMS-- build-and-install.sh: Build type set to RELEASE
+
+
+--SMS-- build-and-install.sh: Building CaDiCaL
+
+configure: making default 'build' directory
+configure: building in default '/home/ubuntu/Documents/caza-conjeturas/sms/cadical_sms/build'
+configure: root directory '/home/ubuntu/Documents/caza-conjeturas/sms/cadical_sms'
+configure: source directory '/home/ubuntu/Documents/caza-conjeturas/sms/cadical_sms/src'
+configure: compiler supports all required C99/C++11 extensions
+configure: compiler configuration supports flexible array members
+configure: unlocked IO with '{putc,getc}_unlocked' seems to work
+configure: 'closefrom' seems to be working
+configure: compiling with 'g++ -Wall -Wextra -O3 -DNDEBUG -fPIC'
+configure: generated 'build/makefile' from '../makefile.in'
+configure: generated '../makefile' as proxy to ...
+configure: ... '/home/ubuntu/Documents/caza-conjeturas/sms/cadical_sms/build/makefile'
+configure: linking '/home/ubuntu/Documents/caza-conjeturas/sms/cadical_sms/makefile'
+configure: now run 'make' to compile CaDiCaL
+configure: optionally run 'make test'
+make -C "/home/ubuntu/Documents/caza-conjeturas/sms/cadical_sms/build"
+make[1]: Entering directory '/home/ubuntu/Documents/caza-conjeturas/sms/cadical_sms/build'
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/analyze.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/arena.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/assume.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/averages.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/backtrack.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/backward.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/bins.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/block.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/ccadical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/checker.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/clause.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/collect.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/compact.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/condition.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/config.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/constrain.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/contract.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/cover.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/decide.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/decompose.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/deduplicate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/drattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/elim.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/ema.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/extend.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/external.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/external_propagate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/file.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/flags.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/flip.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/format.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/frattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/gates.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/idruptracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/instantiate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/internal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/ipasir.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/lidruptracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/limit.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/logging.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/lookahead.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/lratbuilder.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/lratchecker.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/lrattracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/lucky.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/message.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/minimize.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/occs.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/options.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/parse.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/phases.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/probe.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/profile.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/proof.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/propagate.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/queue.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/random.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/reap.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/reduce.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/rephase.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/report.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/resources.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/restart.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/restore.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/score.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/shrink.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/signal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/solution.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/solver.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/stats.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/subsume.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/terminal.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/ternary.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/transred.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/util.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/var.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/veripbtracer.cpp
+../scripts/make-build-header.sh > build.hpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/vivify.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/walk.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/watch.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../contrib/craigtracer.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/cadical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/mobical.cpp
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -c ../src/version.cpp
+ar rc libcadical.a analyze.o arena.o assume.o averages.o backtrack.o backward.o bins.o block.o ccadical.o checker.o clause.o collect.o compact.o condition.o config.o constrain.o contract.o cover.o decide.o decompose.o deduplicate.o drattracer.o elim.o ema.o extend.o external.o external_propagate.o file.o flags.o flip.o format.o frattracer.o gates.o idruptracer.o instantiate.o internal.o ipasir.o lidruptracer.o limit.o logging.o lookahead.o lratbuilder.o lratchecker.o lrattracer.o lucky.o message.o minimize.o occs.o options.o parse.o phases.o probe.o profile.o proof.o propagate.o queue.o random.o reap.o reduce.o rephase.o report.o resources.o restart.o restore.o score.o shrink.o signal.o solution.o solver.o stats.o subsume.o terminal.o ternary.o transred.o util.o var.o veripbtracer.o version.o vivify.o walk.o watch.o craigtracer.o
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -o cadical cadical.o -L. -lcadical 
+g++ -Wall -Wextra -O3 -DNDEBUG -fPIC -I../build -I../src -o mobical mobical.o -L. -lcadical
+make[1]: Leaving directory '/home/ubuntu/Documents/caza-conjeturas/sms/cadical_sms/build'
+
+--SMS-- build-and-install.sh: Attempting to clone the Glasgow Subgraph Solver from GitHub
+
+Cloning into 'glasgow-subgraph-solver'...
+
+--SMS-- build-and-install.sh: Building the Glasgow Subgraph Solver
+
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test COMPILER_SUPPORTS_MARCH_NATIVE
+-- Performing Test COMPILER_SUPPORTS_MARCH_NATIVE - Success
+-- Performing Test COMPILER_SUPPORTS_NO_RESTRICT
+-- Performing Test COMPILER_SUPPORTS_NO_RESTRICT - Success
+-- Performing Test COMPILER_SUPPORTS_NO_STRINGOP_OVERREAD
+-- Performing Test COMPILER_SUPPORTS_NO_STRINGOP_OVERREAD - Success
+-- Populating catch2
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/Documents/caza-conjeturas/sms/glasgow-subgraph-solver/build/_deps/catch2-subbuild
+[ 11%] Creating directories for 'catch2-populate'
+[ 22%] Performing download step (git clone) for 'catch2-populate'
+Cloning into 'catch2-src'...
+HEAD is now at 6e79e682 v3.4.0
+[ 33%] Performing update step for 'catch2-populate'
+-- Already at requested ref: 6e79e682b726f524310d55dec8ddac4e9c52fb5f
+[ 44%] No patch step for 'catch2-populate'
+[ 55%] No configure step for 'catch2-populate'
+[ 66%] No build step for 'catch2-populate'
+[ 77%] No install step for 'catch2-populate'
+[ 88%] No test step for 'catch2-populate'
+[100%] Completed 'catch2-populate'
+[100%] Built target catch2-populate
+-- Performing Test HAVE_FLAG__ffile_prefix_map__home_ubuntu_Documents_caza_conjeturas_sms_glasgow_subgraph_solver_build__deps_catch2_src__
+-- Performing Test HAVE_FLAG__ffile_prefix_map__home_ubuntu_Documents_caza_conjeturas_sms_glasgow_subgraph_solver_build__deps_catch2_src__ - Success
+-- Populating cxxopts
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/Documents/caza-conjeturas/sms/glasgow-subgraph-solver/build/_deps/cxxopts-subbuild
+[ 11%] Creating directories for 'cxxopts-populate'
+[ 22%] Performing download step (git clone) for 'cxxopts-populate'
+Cloning into 'cxxopts-src'...
+HEAD is now at 44380e5 Fix and bump to next version
+[ 33%] Performing update step for 'cxxopts-populate'
+-- Already at requested ref: 44380e5a44706ab7347f400698c703eb2a196202
+[ 44%] No patch step for 'cxxopts-populate'
+[ 55%] No configure step for 'cxxopts-populate'
+[ 66%] No build step for 'cxxopts-populate'
+[ 77%] No install step for 'cxxopts-populate'
+[ 88%] No test step for 'cxxopts-populate'
+[100%] Completed 'cxxopts-populate'
+[100%] Built target cxxopts-populate
+-- Configuring done (8.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/Documents/caza-conjeturas/sms/glasgow-subgraph-solver/build
+[  0%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/restarts.cc.o
+[  1%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/clique.cc.o
+[  1%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/common_subgraph.cc.o
+[  2%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/configuration.cc.o
+[  3%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/homomorphism.cc.o
+[  4%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/sip_decomposer.cc.o
+[  4%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/timeout.cc.o
+[  5%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/cheap_all_different.cc.o
+[  6%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/graph_traits.cc.o
+[  6%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/homomorphism_domain.cc.o
+[  7%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/homomorphism_model.cc.o
+[  8%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/homomorphism_traits.cc.o
+[  8%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/homomorphism_searcher.cc.o
+[  8%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/svo_bitset.cc.o
+[  8%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o
+[  9%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/proof.cc.o
+[ 10%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/thread_utils.cc.o
+[ 10%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/verify.cc.o
+[ 11%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_benchmark_function.cpp.o
+[ 12%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/innards/watches.cc.o
+[ 13%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/formats/csv.cc.o
+[ 13%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_run_for_at_least.cpp.o
+[ 14%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_stats.cpp.o
+[ 15%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generator_exception.cpp.o
+[ 15%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o
+[ 15%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/formats/dimacs.cc.o
+[ 16%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/formats/graph_file_error.cc.o
+[ 17%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/formats/input_graph.cc.o
+[ 17%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/formats/lad.cc.o
+[ 18%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.cpp.o
+[ 19%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/formats/read_file_format.cc.o
+[ 19%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_automake.cpp.o
+[ 20%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_common_base.cpp.o
+[ 21%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_compact.cpp.o
+[ 21%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_console.cpp.o
+[ 21%] Building CXX object gss/CMakeFiles/glasgow_subgraphs.dir/formats/vfmcs.cc.o
+[ 22%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_cumulative_base.cpp.o
+[ 22%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_event_listener.cpp.o
+[ 23%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o
+[ 24%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.o
+[ 24%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_multi.cpp.o
+[ 25%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_registrars.cpp.o
+[ 25%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_sonarqube.cpp.o
+[ 26%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_streaming_base.cpp.o
+[ 27%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_tap.cpp.o
+[ 27%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.o
+[ 28%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o
+[ 29%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_capture.cpp.o
+[ 29%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_config.cpp.o
+[ 30%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_exception.cpp.o
+[ 30%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_generatortracker.cpp.o
+[ 31%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_registry_hub.cpp.o
+[ 32%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter.cpp.o
+[ 32%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.o
+[ 33%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_testcase.cpp.o
+[ 33%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.o
+[ 34%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_assertion_result.cpp.o
+[ 35%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_config.cpp.o
+[ 35%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o
+[ 36%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_message.cpp.o
+[ 36%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o
+[ 37%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_session.cpp.o
+[ 38%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tag_alias_autoregistrar.cpp.o
+[ 38%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_case_info.cpp.o
+[ 39%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_test_spec.cpp.o
+[ 40%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_timer.cpp.o
+[ 40%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.o
+[ 41%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.o
+[ 41%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.o
+[ 42%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_version.cpp.o
+[ 43%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp.o
+[ 43%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_case_insensitive_comparisons.cpp.o
+[ 44%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_clara.cpp.o
+[ 44%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_commandline.cpp.o
+[ 45%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.o
+[ 46%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o
+[ 46%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debug_console.cpp.o
+[ 47%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_debugger.cpp.o
+[ 47%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.o
+[ 48%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enforce.cpp.o
+[ 49%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_enum_values_registry.cpp.o
+[ 49%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_errno_guard.cpp.o
+[ 50%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_exception_translator_registry.cpp.o
+[ 50%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_fatal_condition_handler.cpp.o
+[ 51%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_floating_point_helpers.cpp.o
+[ 52%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_getenv.cpp.o
+[ 52%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o
+[ 53%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.o
+[ 54%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_leak_detector.cpp.o
+[ 54%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.o
+[ 55%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_message_info.cpp.o
+[ 55%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_output_redirect.cpp.o
+[ 56%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_parse_numbers.cpp.o
+[ 57%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_polyfills.cpp.o
+[ 57%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_number_generator.cpp.o
+[ 58%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_random_seed_generation.cpp.o
+[ 58%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_registry.cpp.o
+[ 59%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.o
+[ 60%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.o
+[ 60%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reusable_string_stream.cpp.o
+[ 61%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.o
+[ 61%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.o
+[ 62%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_singletons.cpp.o
+[ 63%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_source_line_info.cpp.o
+[ 63%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_startup_exception_registry.cpp.o
+[ 64%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stdstreams.cpp.o
+[ 65%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_string_manip.cpp.o
+[ 66%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_tag_alias_registry.cpp.o
+[ 66%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_stringref.cpp.o
+[ 66%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_info_hasher.cpp.o
+[ 67%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_impl.cpp.o
+[ 68%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.o
+[ 68%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_failure_exception.cpp.o
+[ 69%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_registry.cpp.o
+[ 69%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.o
+[ 70%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_textflow.cpp.o
+[ 71%] Linking CXX static library libglasgow_subgraphs.a
+[ 72%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_uncaught_exceptions.cpp.o
+[ 72%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_wildcard_pattern.cpp.o
+[ 73%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_xmlwriter.cpp.o
+[ 73%] Built target glasgow_subgraphs
+[ 74%] Building CXX object src/CMakeFiles/glasgow_subgraph_solver.dir/glasgow_subgraph_solver.cc.o
+[ 75%] Building CXX object src/CMakeFiles/glasgow_clique_solver.dir/glasgow_clique_solver.cc.o
+[ 75%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.o
+[ 75%] Building CXX object src/CMakeFiles/glasgow_common_subgraph_solver.dir/glasgow_common_subgraph_solver.cc.o
+[ 75%] Building CXX object src/CMakeFiles/create_random_graph.dir/create_random_graph.cc.o
+[ 75%] Building CXX object src/CMakeFiles/convert_to_lad.dir/convert_to_lad.cc.o
+[ 76%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_properties.cpp.o
+[ 77%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cpp.o
+[ 77%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_point.cpp.o
+[ 78%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cpp.o
+[ 78%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.cpp.o
+[ 79%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o
+[ 80%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.o
+[ 80%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.o
+[ 81%] Linking CXX static library libCatch2.a
+[ 81%] Built target Catch2
+[ 82%] Building CXX object _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o
+[ 82%] Linking CXX static library libCatch2Main.a
+[ 82%] Built target Catch2WithMain
+[ 83%] Building CXX object gss/CMakeFiles/restarts_test.dir/restarts_test.cc.o
+[ 83%] Building CXX object gss/CMakeFiles/homomorphism_test.dir/homomorphism_test.cc.o
+[ 84%] Building CXX object gss/CMakeFiles/clique_test.dir/clique_test.cc.o
+[ 85%] Building CXX object gss/CMakeFiles/homomorphism_matrix_test.dir/homomorphism_matrix_test.cc.o
+[ 86%] Building CXX object gss/CMakeFiles/common_subgraph_test.dir/common_subgraph_test.cc.o
+[ 87%] Building CXX object gss/CMakeFiles/subgraph_isomorphism_test.dir/subgraph_isomorphism_test.cc.o
+[ 89%] Building CXX object gss/CMakeFiles/formats_test.dir/formats/formats_test.cc.o
+[ 89%] Building CXX object gss/CMakeFiles/svo_bitset_test.dir/innards/svo_bitset_test.cc.o
+[ 90%] Building CXX object gss/CMakeFiles/loooong_test.dir/loooong_test.cc.o
+[ 91%] Building CXX object gss/CMakeFiles/extra_shapes_test.dir/extra_shapes_test.cc.o
+[ 91%] Building CXX object gss/CMakeFiles/random_homomorphism_test.dir/random_homomorphism_test.cc.o
+[ 92%] Linking CXX executable ../restarts_test
+[ 93%] Linking CXX executable ../loooong_test
+[ 94%] Linking CXX executable ../svo_bitset_test
+[ 94%] Linking CXX executable ../extra_shapes_test
+[ 95%] Linking CXX executable ../convert_to_lad
+[ 95%] Built target loooong_test
+[ 95%] Built target restarts_test
+[ 95%] Linking CXX executable ../homomorphism_matrix_test
+[ 95%] Built target svo_bitset_test
+[ 95%] Linking CXX executable ../subgraph_isomorphism_test
+[ 95%] Built target convert_to_lad
+[ 95%] Built target extra_shapes_test
+[ 95%] Linking CXX executable ../clique_test
+[ 96%] Linking CXX executable ../create_random_graph
+[ 97%] Linking CXX executable ../common_subgraph_test
+[ 97%] Built target subgraph_isomorphism_test
+[ 97%] Built target create_random_graph
+[ 98%] Linking CXX executable ../random_homomorphism_test
+[ 98%] Built target homomorphism_matrix_test
+[ 98%] Built target clique_test
+[ 98%] Built target common_subgraph_test
+[ 98%] Linking CXX executable ../formats_test
+[ 99%] Linking CXX executable ../glasgow_common_subgraph_solver
+[ 99%] Built target random_homomorphism_test
+[100%] Linking CXX executable ../glasgow_clique_solver
+[100%] Built target glasgow_common_subgraph_solver
+[100%] Built target glasgow_clique_solver
+[100%] Built target formats_test
+[100%] Linking CXX executable ../homomorphism_test
+[100%] Built target homomorphism_test
+[100%] Linking CXX executable ../glasgow_subgraph_solver
+[100%] Built target glasgow_subgraph_solver
+
+--SMS-- build-and-install.sh: Glasgow solver built successfully
+
+/home/ubuntu/Documents/caza-conjeturas/sms
+
+--SMS-- build-and-install.sh: Configuring SMS build directory...
+
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (policy) at CMakeLists.txt:28 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Found Boost: /home/ubuntu/miniconda3/envs/eg_sms_env/lib/cmake/Boost-1.91.0/BoostConfig.cmake (found version "1.91.0") found components: container thread iostreams
+-- Linking with the Glasgow Subgraph Solver
+CMake Warning (policy) at src/CMakeLists.txt:5 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Found Boost: /home/ubuntu/miniconda3/envs/eg_sms_env/lib/cmake/Boost-1.91.0/BoostConfig.cmake (found suitable version "1.91.0", minimum required is "1.74.0") found components: program_options graph
+Graph propagators: /home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/coloring.cpp;/home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/coloringCheck.cpp;/home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/connectedChecker.cpp;/home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/decomposabilityCheck.cpp;/home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/domination.cpp;/home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/efx.cpp;/home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/graphUtilities.cpp;/home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/planarity.cpp;/home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/subgraphIsomorphism.cpp
+CaDiCaL found at /home/ubuntu/Documents/caza-conjeturas/sms/cadical_sms/build/libcadical.a
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/ubuntu/Documents/caza-conjeturas/sms/build
+
+--SMS-- build-and-install.sh: building SMS
+
+[  8%] Building CXX object src/CMakeFiles/sms_static.dir/sms.cpp.o
+[  8%] Building CXX object src/CMakeFiles/sms_static.dir/minimalityCheckCommon.cpp.o
+[  8%] Building CXX object src/CMakeFiles/sms.dir/minimalityCheckCommon.cpp.o
+[  8%] Building CXX object src/CMakeFiles/sms.dir/sms.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/sms.dir/graph.cpp.o
+[ 12%] Building CXX object src/CMakeFiles/sms_static.dir/graph.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/sms.dir/useful.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/sms_static.dir/useful.cpp.o
+[ 18%] Building CXX object src/CMakeFiles/sms_static.dir/options.cpp.o
+[ 20%] Building CXX object src/CMakeFiles/sms_static.dir/minimalityCheck.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/sms.dir/minimalityCheck.cpp.o
+[ 25%] Building CXX object src/CMakeFiles/sms_static.dir/minimalityCheck_dir.cpp.o
+[ 29%] Building CXX object src/CMakeFiles/sms.dir/minimalityCheckColex.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/sms_static.dir/minimalityCheckColex.cpp.o
+[ 31%] Building CXX object src/CMakeFiles/sms.dir/minimalityCheck_dir.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/sms.dir/options.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/sms_static.dir/cubing.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/sms.dir/cubing.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/sms_static.dir/qbf/universal.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/sms_static.dir/qbf/universal2.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/sms_static.dir/qbf/qcirParser.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/sms.dir/qbf/universal.cpp.o
+In file included from /home/ubuntu/Documents/caza-conjeturas/sms/src/options.cpp:85:
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::start_time’ [-Wmissing-field-initializers]
+  112 |         .no_supplementals = true};
+      |                                 ^
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::enumerate_callback’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::extra_shapes’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::pattern_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::target_occur_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::proof_options’ [-Wmissing-field-initializers]
+In file included from /home/ubuntu/Documents/caza-conjeturas/sms/src/options.cpp:85:
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::start_time’ [-Wmissing-field-initializers]
+  112 |         .no_supplementals = true};
+      |                                 ^
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::enumerate_callback’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::extra_shapes’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::pattern_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::target_occur_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::proof_options’ [-Wmissing-field-initializers]
+[ 47%] Building CXX object src/CMakeFiles/sms.dir/qbf/universal2.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/sms_static.dir/other/forbiddenSubgraph.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/sms_static.dir/graphPropagators/coloring.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/sms_static.dir/graphPropagators/coloringCheck.cpp.o
+[ 56%] Building CXX object src/CMakeFiles/sms_static.dir/graphPropagators/connectedChecker.cpp.o
+[ 58%] Building CXX object src/CMakeFiles/sms_static.dir/graphPropagators/decomposabilityCheck.cpp.o
+[ 60%] Building CXX object src/CMakeFiles/sms.dir/qbf/qcirParser.cpp.o
+[ 62%] Building CXX object src/CMakeFiles/sms.dir/other/forbiddenSubgraph.cpp.o
+[ 64%] Building CXX object src/CMakeFiles/sms.dir/graphPropagators/coloring.cpp.o
+In file included from /home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:1:
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::start_time’ [-Wmissing-field-initializers]
+  112 |         .no_supplementals = true};
+      |                                 ^
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::enumerate_callback’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::extra_shapes’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::pattern_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::target_occur_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::proof_options’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::start_time’ [-Wmissing-field-initializers]
+    6 |     .no_supplementals = true};
+      |                             ^
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::enumerate_callback’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::extra_shapes’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::pattern_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::target_occur_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::proof_options’ [-Wmissing-field-initializers]
+[ 66%] Building CXX object src/CMakeFiles/sms_static.dir/graphPropagators/domination.cpp.o
+[ 68%] Building CXX object src/CMakeFiles/sms.dir/graphPropagators/coloringCheck.cpp.o
+[ 70%] Building CXX object src/CMakeFiles/sms.dir/graphPropagators/connectedChecker.cpp.o
+[ 72%] Building CXX object src/CMakeFiles/sms_static.dir/graphPropagators/efx.cpp.o
+[ 75%] Building CXX object src/CMakeFiles/sms_static.dir/graphPropagators/graphUtilities.cpp.o
+[ 77%] Building CXX object src/CMakeFiles/sms.dir/graphPropagators/decomposabilityCheck.cpp.o
+[ 79%] Building CXX object src/CMakeFiles/sms_static.dir/graphPropagators/planarity.cpp.o
+In file included from /home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:1:
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::start_time’ [-Wmissing-field-initializers]
+  112 |         .no_supplementals = true};
+      |                                 ^
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::enumerate_callback’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::extra_shapes’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::pattern_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::target_occur_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.hpp:112:33: warning: missing initializer for member ‘gss::HomomorphismParams::proof_options’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::start_time’ [-Wmissing-field-initializers]
+    6 |     .no_supplementals = true};
+      |                             ^
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::enumerate_callback’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::extra_shapes’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::pattern_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::target_occur_less_constraints’ [-Wmissing-field-initializers]
+/home/ubuntu/Documents/caza-conjeturas/sms/src/other/forbiddenSubgraph.cpp:6:29: warning: missing initializer for member ‘gss::HomomorphismParams::proof_options’ [-Wmissing-field-initializers]
+[ 81%] Building CXX object src/CMakeFiles/sms_static.dir/graphPropagators/subgraphIsomorphism.cpp.o
+[ 83%] Building CXX object src/CMakeFiles/sms.dir/graphPropagators/domination.cpp.o
+[ 85%] Building CXX object src/CMakeFiles/sms.dir/graphPropagators/efx.cpp.o
+[ 87%] Building CXX object src/CMakeFiles/sms.dir/graphPropagators/graphUtilities.cpp.o
+[ 89%] Building CXX object src/CMakeFiles/sms.dir/graphPropagators/planarity.cpp.o
+[ 91%] Building CXX object src/CMakeFiles/sms.dir/graphPropagators/subgraphIsomorphism.cpp.o
+In file included from /usr/include/c++/13/bits/stl_algobase.h:67,
+                 from /usr/include/c++/13/vector:62,
+                 from /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:11,
+                 from /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/boyer_myrvold_planar_test.hpp:12,
+                 from /home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/planarity.cpp:1:
+In member function ‘constexpr __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container>::operator+(difference_type) const [with _Iterator = long unsigned int*; _Container = std::vector<long unsigned int, std::allocator<long unsigned int> >]’,
+    inlined from ‘R boost::iterator_property_map<RandomAccessIterator, IndexMap, T, R>::operator[](key_type) const [with RandomAccessIterator = __gnu_cxx::__normal_iterator<long unsigned int*, std::vector<long unsigned int, std::allocator<long unsigned int> > >; IndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; T = long unsigned int; R = long unsigned int&]’ at /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/property_map/property_map.hpp:341:59,
+    inlined from ‘void boost::boyer_myrvold_impl<Graph, VertexIndexMap, StoreOldHandlesPolicy, StoreEmbeddingPolicy>::extract_kuratowski_subgraph(OutputIterator, EdgeIndexMap) [with OutputIterator = std::back_insert_iterator<std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; EdgeIndexMap = boost::adj_list_edge_property_map<boost::undirected_tag, int, const int&, long unsigned int, const boost::property<boost::edge_index_t, int>, boost::edge_index_t>; Graph = boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, boost::property<boost::vertex_index_t, int>, boost::property<boost::edge_index_t, int> >; VertexIndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; StoreOldHandlesPolicy = boost::graph::detail::store_old_handles; StoreEmbeddingPolicy = boost::graph::detail::no_embedding]’ at /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:1162:52:
+/usr/include/c++/13/bits/stl_iterator.h:1148:45: warning: ‘previous_vertex’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1148 |       { return __normal_iterator(_M_current + __n); }
+      |                                  ~~~~~~~~~~~^~~~~
+/home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp: In member function ‘void boost::boyer_myrvold_impl<Graph, VertexIndexMap, StoreOldHandlesPolicy, StoreEmbeddingPolicy>::extract_kuratowski_subgraph(OutputIterator, EdgeIndexMap) [with OutputIterator = std::back_insert_iterator<std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; EdgeIndexMap = boost::adj_list_edge_property_map<boost::undirected_tag, int, const int&, long unsigned int, const boost::property<boost::edge_index_t, int>, boost::edge_index_t>; Graph = boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, boost::property<boost::vertex_index_t, int>, boost::property<boost::edge_index_t, int> >; VertexIndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; StoreOldHandlesPolicy = boost::graph::detail::store_old_handles; StoreEmbeddingPolicy = boost::graph::detail::no_embedding]’:
+/home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:1153:18: note: ‘previous_vertex’ was declared here
+ 1153 |         vertex_t previous_vertex;
+      |                  ^~~~~~~~~~~~~~~
+In member function ‘constexpr __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container>::operator+(difference_type) const [with _Iterator = boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int>*; _Container = std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> >]’,
+    inlined from ‘R boost::iterator_property_map<RandomAccessIterator, IndexMap, T, R>::operator[](key_type) const [with RandomAccessIterator = __gnu_cxx::__normal_iterator<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int>*, std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; IndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; T = boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int>; R = boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int>&]’ at /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/property_map/property_map.hpp:341:59,
+    inlined from ‘void boost::boyer_myrvold_impl<Graph, VertexIndexMap, StoreOldHandlesPolicy, StoreEmbeddingPolicy>::extract_kuratowski_subgraph(OutputIterator, EdgeIndexMap) [with OutputIterator = std::back_insert_iterator<std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; EdgeIndexMap = boost::adj_list_edge_property_map<boost::undirected_tag, int, const int&, long unsigned int, const boost::property<boost::edge_index_t, int>, boost::edge_index_t>; Graph = boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, boost::property<boost::vertex_index_t, int>, boost::property<boost::edge_index_t, int> >; VertexIndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; StoreOldHandlesPolicy = boost::graph::detail::store_old_handles; StoreEmbeddingPolicy = boost::graph::detail::no_embedding]’ at /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:1618:43:
+/usr/include/c++/13/bits/stl_iterator.h:1148:45: warning: ‘bicomp_root’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1148 |       { return __normal_iterator(_M_current + __n); }
+      |                                  ~~~~~~~~~~~^~~~~
+/home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp: In member function ‘void boost::boyer_myrvold_impl<Graph, VertexIndexMap, StoreOldHandlesPolicy, StoreEmbeddingPolicy>::extract_kuratowski_subgraph(OutputIterator, EdgeIndexMap) [with OutputIterator = std::back_insert_iterator<std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; EdgeIndexMap = boost::adj_list_edge_property_map<boost::undirected_tag, int, const int&, long unsigned int, const boost::property<boost::edge_index_t, int>, boost::edge_index_t>; Graph = boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, boost::property<boost::vertex_index_t, int>, boost::property<boost::edge_index_t, int> >; VertexIndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; StoreOldHandlesPolicy = boost::graph::detail::store_old_handles; StoreEmbeddingPolicy = boost::graph::detail::no_embedding]’:
+/home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:1111:18: note: ‘bicomp_root’ was declared here
+ 1111 |         vertex_t bicomp_root;
+      |                  ^~~~~~~~~~~
+In file included from /usr/include/c++/13/bits/stl_algobase.h:67,
+                 from /usr/include/c++/13/vector:62,
+                 from /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:11,
+                 from /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/boyer_myrvold_planar_test.hpp:12,
+                 from /home/ubuntu/Documents/caza-conjeturas/sms/src/graphPropagators/planarity.cpp:1:
+In member function ‘constexpr __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container>::operator+(difference_type) const [with _Iterator = long unsigned int*; _Container = std::vector<long unsigned int, std::allocator<long unsigned int> >]’,
+    inlined from ‘R boost::iterator_property_map<RandomAccessIterator, IndexMap, T, R>::operator[](key_type) const [with RandomAccessIterator = __gnu_cxx::__normal_iterator<long unsigned int*, std::vector<long unsigned int, std::allocator<long unsigned int> > >; IndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; T = long unsigned int; R = long unsigned int&]’ at /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/property_map/property_map.hpp:341:59,
+    inlined from ‘void boost::boyer_myrvold_impl<Graph, VertexIndexMap, StoreOldHandlesPolicy, StoreEmbeddingPolicy>::extract_kuratowski_subgraph(OutputIterator, EdgeIndexMap) [with OutputIterator = std::back_insert_iterator<std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; EdgeIndexMap = boost::adj_list_edge_property_map<boost::undirected_tag, int, const int&, long unsigned int, const boost::property<boost::edge_index_t, int>, boost::edge_index_t>; Graph = boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, boost::property<boost::vertex_index_t, int>, boost::property<boost::edge_index_t, int> >; VertexIndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; StoreOldHandlesPolicy = boost::graph::detail::store_old_handles; StoreEmbeddingPolicy = boost::graph::detail::no_embedding]’ at /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:1162:52:
+/usr/include/c++/13/bits/stl_iterator.h:1148:45: warning: ‘previous_vertex’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1148 |       { return __normal_iterator(_M_current + __n); }
+      |                                  ~~~~~~~~~~~^~~~~
+/home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp: In member function ‘void boost::boyer_myrvold_impl<Graph, VertexIndexMap, StoreOldHandlesPolicy, StoreEmbeddingPolicy>::extract_kuratowski_subgraph(OutputIterator, EdgeIndexMap) [with OutputIterator = std::back_insert_iterator<std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; EdgeIndexMap = boost::adj_list_edge_property_map<boost::undirected_tag, int, const int&, long unsigned int, const boost::property<boost::edge_index_t, int>, boost::edge_index_t>; Graph = boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, boost::property<boost::vertex_index_t, int>, boost::property<boost::edge_index_t, int> >; VertexIndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; StoreOldHandlesPolicy = boost::graph::detail::store_old_handles; StoreEmbeddingPolicy = boost::graph::detail::no_embedding]’:
+/home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:1153:18: note: ‘previous_vertex’ was declared here
+ 1153 |         vertex_t previous_vertex;
+      |                  ^~~~~~~~~~~~~~~
+In member function ‘constexpr __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container>::operator+(difference_type) const [with _Iterator = boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int>*; _Container = std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> >]’,
+    inlined from ‘R boost::iterator_property_map<RandomAccessIterator, IndexMap, T, R>::operator[](key_type) const [with RandomAccessIterator = __gnu_cxx::__normal_iterator<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int>*, std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; IndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; T = boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int>; R = boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int>&]’ at /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/property_map/property_map.hpp:341:59,
+    inlined from ‘void boost::boyer_myrvold_impl<Graph, VertexIndexMap, StoreOldHandlesPolicy, StoreEmbeddingPolicy>::extract_kuratowski_subgraph(OutputIterator, EdgeIndexMap) [with OutputIterator = std::back_insert_iterator<std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; EdgeIndexMap = boost::adj_list_edge_property_map<boost::undirected_tag, int, const int&, long unsigned int, const boost::property<boost::edge_index_t, int>, boost::edge_index_t>; Graph = boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, boost::property<boost::vertex_index_t, int>, boost::property<boost::edge_index_t, int> >; VertexIndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; StoreOldHandlesPolicy = boost::graph::detail::store_old_handles; StoreEmbeddingPolicy = boost::graph::detail::no_embedding]’ at /home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:1618:43:
+/usr/include/c++/13/bits/stl_iterator.h:1148:45: warning: ‘bicomp_root’ may be used uninitialized [-Wmaybe-uninitialized]
+ 1148 |       { return __normal_iterator(_M_current + __n); }
+      |                                  ~~~~~~~~~~~^~~~~
+/home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp: In member function ‘void boost::boyer_myrvold_impl<Graph, VertexIndexMap, StoreOldHandlesPolicy, StoreEmbeddingPolicy>::extract_kuratowski_subgraph(OutputIterator, EdgeIndexMap) [with OutputIterator = std::back_insert_iterator<std::vector<boost::detail::edge_desc_impl<boost::undirected_tag, long unsigned int> > >; EdgeIndexMap = boost::adj_list_edge_property_map<boost::undirected_tag, int, const int&, long unsigned int, const boost::property<boost::edge_index_t, int>, boost::edge_index_t>; Graph = boost::adjacency_list<boost::vecS, boost::vecS, boost::undirectedS, boost::property<boost::vertex_index_t, int>, boost::property<boost::edge_index_t, int> >; VertexIndexMap = boost::vec_adj_list_vertex_id_map<boost::property<boost::vertex_index_t, int>, long unsigned int>; StoreOldHandlesPolicy = boost::graph::detail::store_old_handles; StoreEmbeddingPolicy = boost::graph::detail::no_embedding]’:
+/home/ubuntu/miniconda3/envs/eg_sms_env/include/boost/graph/planar_detail/boyer_myrvold_impl.hpp:1111:18: note: ‘bicomp_root’ was declared here
+ 1111 |         vertex_t bicomp_root;
+      |                  ^~~~~~~~~~~
+[ 93%] Linking CXX static library libsms.a
+[ 93%] Built target sms_static
+[ 95%] Building CXX object src/CMakeFiles/smsg.dir/main.cpp.o
+[ 97%] Linking CXX shared library libsms.so
+[ 97%] Built target sms
+[100%] Linking CXX executable smsg
+[100%] Built target smsg
+
+--SMS-- build-and-install.sh: SMS built successfully
+
+
+--SMS-- build-and-install.sh: installing SMS binaries
+
+-- Install configuration: "Release"
+-- Installing: /home/ubuntu/.local/bin/smsg
+-- Installing: /home/ubuntu/.local/lib/libsms.so
+-- Installing: /home/ubuntu/.local/lib/libsms.a
+-- Installing: /home/ubuntu/.local/lib/libsmscadical.a
+-- Installing: /home/ubuntu/.local/include/sms/sms.hpp
+-- Installing: /home/ubuntu/.local/include/sms/cadical.hpp
+-- Installing: /home/ubuntu/.local/include/sms/useful.h
+-- Installing: /home/ubuntu/.local/include/sms/graphChecker.hpp
+-- Installing: /home/ubuntu/.local/include/sms/minimalityCheck.hpp
+-- Installing: /home/ubuntu/.local/share/bash-completion/completions/smsg
+
+--SMS-- build-and-install.sh: installing PySMS
+
+Processing ./.
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: sms-graph-builder
+  Building wheel for sms-graph-builder (pyproject.toml): started
+  Building wheel for sms-graph-builder (pyproject.toml): finished with status 'done'
+  Created wheel for sms-graph-builder: filename=sms_graph_builder-2024.11-py3-none-any.whl size=30930 sha256=65db7e6897d1e2a6d3d538902ec8256bc086ccf865b9c7317a4188187cf96b87
+  Stored in directory: /tmp/pip-ephem-wheel-cache-vx3xvdst/wheels/dc/4d/4e/718ecb1a8c9330641e1f23f57b9cd13edac09ef04e61bcd372
+Successfully built sms-graph-builder
+Installing collected packages: sms-graph-builder
+Successfully installed sms-graph-builder-2024.11

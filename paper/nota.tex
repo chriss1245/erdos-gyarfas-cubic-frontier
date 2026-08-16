@@ -1,0 +1,280 @@
+% Nota corta — frontera cúbica de Erdős–Gyárfás mediante SMS calibrado.
+% Los campos [[...]] se rellenan antes de publicar.
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{microtype}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{proposition}{Proposition}
+
+\title{Cubic graphs on at most 40 vertices satisfy the
+  Erd\H{o}s--Gy\'arf\'as conjecture:\\
+  a calibrated SAT-modulo-symmetries search}
+\author{Christopher Andre Manzano Vimos\\
+  \small WhiteBox ML, Madrid\\
+  \small \texttt{eci@whiteboxml.com} \quad
+  ORCID: \href{https://orcid.org/0009-0000-4270-4610}{0009-0000-4270-4610}}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The Erd\H{o}s--Gy\'arf\'as conjecture states that every graph with minimum
+degree at least~3 contains a simple cycle whose length is a power of two.
+Markstr\"om (2004) verified the conjecture for cubic graphs on at most 28
+vertices, and that exhaustive bound stood until 2026. We report an exhaustive
+verification for connected cubic graphs on 30, 32, 34, 36, 38 and 40 vertices:
+in each
+order there is no cubic graph avoiding cycles of length 4, 8 and 16.
+Consequently a smallest cubic counterexample, if one exists, has at least 42
+vertices. The search uses SAT modulo symmetries with a complete
+forbidden-subgraph propagator; unlike a decision procedure taken on trust, the
+instrument is first \emph{calibrated} against exhaustive enumeration: it is
+required to reproduce, exactly and as sets, thirteen reference censuses of cubic
+graphs, nine of which have nonzero answers, including a 348.7 core-hour
+enumeration of order~30 carried out independently by the author. Positive
+controls are additionally run at the frontier orders themselves. All code,
+logs and censuses are available for independent verification.
+\end{abstract}
+
+\section{Introduction}
+
+Erd\H{o}s and Gy\'arf\'as asked whether every finite graph with minimum degree
+at least~3 contains a cycle of length $2^k$ for some $k\ge 2$; the problem
+appears in Erd\H{o}s's problem papers from 1993 onwards~\cite{erdos93}, and
+both believed the answer to be negative. Erd\H{o}s offered \$100 for a proof
+and \$50 for a counterexample~\cite{markstrom2004}; the problem is listed with
+a \$1000 prize as \#64 of the Erd\H{o}s problems
+collection~\cite{erdosproblems}. Liu and Montgomery~\cite{liumontgomery}
+settled the case of sufficiently large minimum degree, and
+Carr~\cite{carr2026} showed that any minimal counterexample is predominantly
+cubic, so the cubic case is the structurally critical one.
+
+\paragraph{Computational state of the art.}
+Markstr\"om~\cite{markstrom2004} generated all cubic graphs on fewer than 29
+vertices and found no counterexample; his Table~3 records the numbers of cubic
+graphs with neither a 4-cycle nor an 8-cycle for $n=24,26,28$, namely $4$, $23$
+and $251$. In 2026 Balaji~\cite{balaji2026} reported, via SAT modulo
+symmetries, that no graph of minimum degree at least~3 on at most 31 vertices
+avoids all power-of-two cycles, which yields the bound $n\ge 32$ for the
+general class and, a fortiori, for the cubic one; that work is a preprint under
+review, and its documentation states that no machine-checkable certificate is
+currently available for the claim, since the clauses contributed by the
+subgraph propagator are not RUP/RAT-derivable from the encoding, and that
+third-party reproduction is outstanding. Tranquilli~\cite{tranquilli2026}
+treats the cubic \emph{bipartite} subclass and reports the bound $n\ge 60$
+there.
+
+\paragraph{Result.}
+\begin{theorem}\label{thm:main}
+Every connected cubic graph on $n \le 40$ vertices contains a cycle of length
+4, 8 or 16. In particular, a smallest cubic counterexample to the
+Erd\H{o}s--Gy\'arf\'as conjecture has at least 42 vertices.
+\end{theorem}
+
+Cubic graphs have even order, and a counterexample may be assumed connected,
+since every component of a cubic graph is itself cubic. Orders $n\le 28$ are
+due to Markstr\"om; orders 30, 32, 34, 36, 38 and 40 are verified here.
+
+\paragraph{Why forbidding $\{4,8,16\}$ suffices.}
+For $n\le 31$ the admissible power-of-two cycle lengths are exactly
+$\{4,8,16\}$, so avoiding them is equivalent to being a counterexample. From
+$n=32$ on, $C_{32}$ also fits, and adding a 32-cycle to the forbidden set
+inside the search is expensive: at $n=32$ it is a Hamiltonian cycle, and as a
+propagator it would be evaluated on every partial assignment. We therefore
+\emph{decouple}: the search forbids only $\{4,8,16\}$, which is a
+\emph{weaker} constraint, and the larger powers of two are tested afterwards
+on whatever survives. Since the search returns no graph at all in every order
+considered, the posterior test is vacuous and the conclusion is stronger than
+required: not merely ``no counterexample'', but ``every cubic graph of that
+order already contains one of $C_4$, $C_8$, $C_{16}$''.
+
+\section{Method}
+
+We use SAT modulo symmetries (SMS, Kirchweger and Szeider~\cite{sms}), which
+performs complete, isomorph-free graph generation inside a CDCL solver, built
+together with the Glasgow subgraph solver~\cite{glasgow} as a complete
+forbidden-subgraph propagator. One call per order decides: \emph{is there a
+connected cubic graph on $n$ vertices containing no $C_4$, $C_8$ or $C_{16}$
+as a subgraph?} The graph is encoded by the $\binom n2$ edge variables; cubicity
+is imposed as a pair of cardinality constraints (sequential counter) fixing
+every degree to exactly~3, and connectivity is imposed by SMS.
+
+Two configuration choices deserve mention. First, the minimality (canonicity)
+check of SMS is applied without cutoff; the default cutoff of $2\cdot10^5$
+truncates the check and thereby weakens complete symmetry breaking. Second, a
+run that exhausts its time budget is recorded as such and never as
+unsatisfiability, and a run whose solution count cannot be parsed is recorded
+as an error rather than as zero; exit codes are checked in every case.
+
+\subsection{Calibration of the instrument}
+
+An unsatisfiability answer is an assertion of the solver, not an object one can
+inspect; enumeration, by contrast, produces countable objects that can be
+compared with published censuses. The dangerous failure mode of a
+SAT-plus-propagator pipeline is over-constraint: such a pipeline returns zero
+everywhere and therefore passes every test whose correct answer is zero. Only a
+test with a known \emph{nonzero} answer detects it.
+
+We therefore require the pipeline to reproduce thirteen reference censuses of
+connected cubic graphs, nine of them nonzero (Table~\ref{tab:calib}). Three
+sources of ground truth are used: Markstr\"om's published Table~3; an
+exhaustive enumeration at orders 24--30 performed by the author with
+\texttt{geng} (nauty~\cite{nauty}) and an embedded C pruning hook, 348.7
+core-hours at order~30; and, to exercise the $C_{16}$ propagator against
+nonzero answers, fresh counts of cubic graphs containing no 16-cycle at orders
+14--22. At orders 14--20 these counts were computed twice with independent
+cycle detectors (a bitmask depth-first search and a networkx-based one). Order
+22, the largest, was counted once, with the bitmask detector, and guarded
+differently: it was generated in six \texttt{res/mod} shards whose graph totals
+sum to $7\,319\,447$, the known number of connected cubic graphs on 22
+vertices, so the partition neither lost nor duplicated a graph; of those,
+$52\,781$ contain no 16-cycle, and each of those $52\,781$ was re-tested
+individually with the networkx detector. The agreement of SMS at this order is
+not counted as verification of the anchor, since SMS is the instrument under
+calibration.
+
+\begin{table}[h]\centering
+\begin{tabular}{llll}
+\toprule
+Order & Forbidden & Expected & SMS \\
+\midrule
+$n=10$ & $C_{16}$ & 19 & 19 \\
+$n=14$ & $C_{16}$ & 509 (no 16-cycle fits) & 509 \\
+$n=16$ & $C_{16}$ & 219 & 219 \\
+$n=18$ & $C_{16}$ & 1471 & 1471 \\
+$n=20$ & $C_{16}$ & 12709 & 12709 \\
+$n=22$ & $C_{16}$ & 52781 & 52781 \\
+$n=24$ & $C_4,C_8$ & 4 (Markstr\"om) & 4, same graphs \\
+$n=26$ & $C_4,C_8$ & 23 (Markstr\"om) & 23, same graphs \\
+$n=28$ & $C_4,C_8$ & 251 (Markstr\"om) & 251 \\
+$n=24,26,28,30$ & $C_4,C_8,C_{16}$ & 0 & 0 \\
+\bottomrule
+\end{tabular}
+\caption{Calibration against exhaustive enumeration. At $n=24$ and $n=26$ the
+comparison is at the level of sets, not merely cardinalities: the graphs
+emitted by SMS and by \texttt{geng} coincide after canonical labelling with
+\texttt{labelg}.}\label{tab:calib}
+\end{table}
+
+Two robustness axes were varied. Re-deciding with the totalizer cardinality
+encoding, a structurally different CNF for the same degree constraint,
+reproduces $251$ at $n=28$, $1471$ at $n=18$ and zero at $n=30$, $n=32$,
+$n=36$ and $n=40$; the last two are frontier orders, re-decided in 4143\,s and
+17\,207\,s against 3366\,s and 18\,922\,s for the sequential counter, so the
+largest order reported here has been decided twice with structurally different
+formulas. The comparison of graph sets at $n=24$ and $n=26$ is exact.
+
+\subsection{Positive controls at the frontier orders}
+
+Calibration establishes that the encoding and the three propagators are
+correct, and encoding faults are order-independent: the same code runs at every
+order. It does not, however, exclude order-dependent breakage that would render
+the formula vacuously unsatisfiable above some size. We therefore also run
+existence queries at the frontier orders themselves, forbidding only
+$\{C_4,C_8\}$, where solutions are known to exist: SMS returns a satisfying
+graph at $n=32$, $34$, $36$, $38$, $40$, $42$ and $44$, the last two beyond the
+orders decided here. The zero counts reported below are
+thus not an artifact of the pipeline ceasing to find anything at large orders.
+
+\subsection{Results}
+
+\begin{table}[h]\centering
+\begin{tabular}{lll}
+\toprule
+$n$ & connected cubic graphs with no $C_4,C_8,C_{16}$ & single-core time \\
+\midrule
+30 & 0 & 187\,s \\
+32 & 0 & 505\,s \\
+34 & 0 & 1188\,s \\
+36 & 0 & 3366\,s \\
+38 & 0 & 8157\,s \\
+40 & 0 & 18922\,s \\
+\bottomrule
+\end{tabular}
+\caption{The frontier sweep. Order~30 also serves as calibration: the same
+answer was obtained by exhaustive enumeration in 348.7 core-hours.}
+\label{tab:frontier}
+\end{table}
+
+The observed growth is a factor of roughly $2.3$ to $2.8$ per two vertices
+(order~40 came in at $2.32$ times order~38), so the method remains within reach
+of a single desktop machine for several further orders. Order~40 was decided in
+a single-threaded run of 5\,h\,15\,min; the native cube-and-conquer
+parallelisation of SMS was measured on this instance family and discarded, as
+it yields only a factor of~$1.7$ on twelve workers, and CaDiCaL's formula
+simplification, which is faster still, does not preserve the set of models:
+under it the $n=28$ census returns 241 instead of 251.
+
+\section{What is not claimed}
+
+The result above order~30 rests on a single method. No machine-checkable proof
+certificate accompanies it: SMS can emit an LRAT proof, but the clauses
+contributed by the subgraph propagator are not RUP/RAT-derivable from the
+encoding alone, so a generic checker cannot validate it; a certified-SMS
+treatment in the sense of~\cite{sms} is the natural strengthening and is not
+attempted here. What we do claim is a calibrated instrument: the pipeline
+reproduces every reference census available in this class, including eight with
+nonzero answers and two at the level of graph sets, and demonstrates
+satisfiable behaviour live at the frontier orders. Order-dependent failure
+modes are guarded procedurally, not proved absent. Independent reproduction
+remains desirable, and the artifacts below are published to that end.
+
+\section{Data availability}
+
+Repository:
+\url{https://github.com/christopher-manzanovimos_geci/erdos-gyarfas-cubic-frontier}
+(private during review; to be made public alongside a Zenodo deposit, whose DOI
+will be minted on publication). The repository contains the
+SMS driver, the calibration battery, the ground-truth generators and cycle
+detectors, the run logs with exit codes and timings, the graph6 censuses for
+$n=14$--$22$ (no $C_{16}$) and $n=24$, $26$ (no $C_4/C_8$), the complete
+July 2026 enumeration apparatus used as independent ground truth, and the build
+record. Versions used: SMS at commit \texttt{464f12f}, CaDiCaL at
+\texttt{b023aaf}, Glasgow subgraph solver at \texttt{1217f5b}; note that the
+SMS build script clones the Glasgow solver at its current head rather than at
+a pinned commit, so this component should be recorded rather than assumed by
+anyone reproducing the computation.
+
+\section*{Acknowledgements}
+The author thanks WhiteBox ML for supporting the publication of this work. The
+computational pipeline was developed with the
+assistance of Claude (Anthropic); the author is responsible for the design of
+the experiments, the verification protocol and all claims made here.
+
+\begin{thebibliography}{9}
+\bibitem{erdos93} P.~Erd\H{o}s, Some of my favorite solved and unsolved
+  problems in graph theory, \emph{Quaestiones Math.} 16 (1993) 333--350.
+\bibitem{erdosproblems} T.~F. Bloom, Erd\H{o}s Problems, \#64,
+  \url{https://www.erdosproblems.com/64} (accessed August 2026).
+\bibitem{markstrom2004} K.~Markstr\"om, Extremal graphs for some problems on
+  cycles in graphs, \emph{Congr. Numer.} 171 (2004) 179--192.
+\bibitem{liumontgomery} H.~Liu and R.~Montgomery, A solution to Erd\H{o}s and
+  Hajnal's odd cycle problem, \emph{J. Amer. Math. Soc.} 36 (2023) 1191--1234.
+\bibitem{carr2026} A.~Carr, Every minimal counterexample to the
+  Erd\H{o}s--Gy\'arf\'as conjecture is predominantly cubic, arXiv:2605.22844
+  (2026).
+\bibitem{balaji2026} A.~Balaji, Verifying the Erd\H{o}s--Gy\'arf\'as conjecture
+  up to 31 vertices with SAT modulo symmetries, Zenodo (2026),
+  \url{https://doi.org/10.5281/zenodo.21190438}; accompanying repository
+  \url{https://github.com/ArjunBalaji79/erdos-gyarfas-min-degree-3}
+  (commit \texttt{53502b0f}, 3 July 2026; accessed August 2026).
+\bibitem{tranquilli2026} J.~Tranquilli, A 60-vertex lower bound for cubic
+  bipartite counterexamples to the Erd\H{o}s--Gy\'arf\'as conjecture,
+  arXiv:2608.02675 (2026).
+\bibitem{sms} M.~Kirchweger and S.~Szeider, SAT modulo symmetries for graph
+  generation and enumeration, \emph{ACM Trans. Comput. Logic} 25 (2024),
+  Article~18.
+\bibitem{glasgow} C.~McCreesh, P.~Prosser and J.~Trimble, The Glasgow subgraph
+  solver: using constraint programming to tackle hard subgraph isomorphism
+  problem variants, in \emph{ICGT 2020}, LNCS 12150, 316--324.
+\bibitem{nauty} B.~D. McKay and A.~Piperno, Practical graph isomorphism, II,
+  \emph{J. Symbolic Comput.} 60 (2014) 94--112.
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,13 @@
+{
+  "n": 36,
+  "forbid": [
+    4,
+    8
+  ],
+  "count": 1,
+  "status": "SAT",
+  "elapsed": 73.23,
+  "returncode": 10,
+  "cmd": "/home/ubuntu/.local/bin/smsg --vertices 36 --connected --cutoff 0 --forbidden-subgraph-file /tmp/eg_cyc_4_8.txt --dimacs /tmp/eg_cnf_n36_3_sequential.cnf",
+  "stdout_tail": "[(0,33),(0,34),(0,35),(1,31),(1,32),(1,35),(2,30),(2,32),(2,34),(3,28),(3,29),(3,35),(4,27),(4,29),(4,33),(5,26),(5,28),(5,31),(6,24),(6,25),(6,34),(7,23),(7,25),(7,30),(8,21),(8,22),(8,33),(9,20),(9,22),(9,27),(10,18),(10,19),(10,31),(11,17),(11,19),(11,23),(12,17),(12,18),(12,21),(13,16),(13,19),(13,20),(14,15),(14,16),(14,24),(15,16),(15,22),(17,25),(18,20),(21,27),(23,26),(24,32),(26,29),(28,30)]\nMaximal depth: 2665\nAverage depth: 633.821051\nStatistics for MinimalityChecker:\n\tCalls: 47730\n\tTime in seconds: 38.4078\n\tAdded clauses: 34786\nStatistics for ConnectedChecker:\n\tCalls: 692\n\tTime in seconds: 0.0038\n\tAdded clauses: 0\nStatistics for ForbiddenSubgraphCheckerGlasgow:\n\tCalls: 39644\n\tTime in seconds: 9.3727\n\tAdded clauses: 18192\nResult: 10\nTotal time: 73.215289\n"
+}

@@ -1,0 +1,1 @@
+[n18-full] tot=41301 sinC16=1471 mal_n=0 mal_grado=0
