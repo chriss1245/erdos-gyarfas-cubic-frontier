@@ -40,7 +40,8 @@ n=22 el censo completo (7,3M) no se re-recorrió con networkx: se re-testó indi
 cada uno de los 52.781 supervivientes (ninguno contiene C16, todos cúbicos de orden 22), y
 la dirección "no falta ninguno" descansa en el total del censo + labelg. La coincidencia de
 SMS (52.781) NO cuenta como verificación del ancla: SMS es el instrumento bajo calibración.
-Ficheros: `recount_nx_n18.txt`, `recount_nx_n20_r*.txt`, `recount_nx_n22_c*.txt`.
+Ficheros: `recount_nx_n14.txt`, `recount_nx_n16.txt`, `recount_nx_n18.txt`,
+`recount_nx_n20_r*.txt`, `recount_nx_n22_c*.txt`.
 
 Grafos volcados en `n14_no-c16.g6`, `n16_no-c16.g6`, `n18_no-c16.g6`, `n20_no-c16.g6` y
 `groundtruth_n22/n22_no-c16_r*.g6` (este directorio) para comparar conjuntos, no solo

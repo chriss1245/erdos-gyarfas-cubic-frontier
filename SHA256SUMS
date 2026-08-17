@@ -24,6 +24,7 @@ ae195faf41254ee7369d4827f11795a72fd4a59ebb523f3af54869fdfcb241fd  ./enumeration-
 9ad92303e658ac4e3a9169250ac4d1c4dd64b66ea7c146b65d1de6cfd0472feb  ./enumeration-2026-07/Makefile
 d39499af734ecca4c1c259b3496e5e63f730d3dfdc73fc4d56cd93ef4c140dbc  ./enumeration-2026-07/README.md
 7529522bc05bdd2e21b08bb53d55ba1b0b0566ad904f91fd899b134a1b8c0350  ./enumeration-2026-07/scripts/verify_sweep.sh
+da0796cfe3d3d37e19b714598af694fd898866fc74a5699ac10bbd7059edaaba  ./enumeration-2026-07/SHA256SUMS
 bb22b3caaf8294503b7b1ee0ef07af02e1a26156557c332396daade71775c935  ./enumeration-2026-07/src/check_pow2.py
 52f1cf28346e80a7ab37eb3d7eba1fa618fcb7815aae3826628c868692463af7  ./enumeration-2026-07/src/filter_eg.py
 1750b23fbd5c999848a077993d74ae25ad1fe727b49eb6e18f7c0f3e66f8a6c9  ./enumeration-2026-07/src/prune_c8.c
@@ -38,7 +39,7 @@ fa26aec77473b11844336cf7e7659199c613af285c838e8acd604acc6bd6b3b2  ./paper/nota.p
 4be17a9d3bca2dd88b4b24f1f8e25bb34a55b35c41672bf1978934a9feabd7b8  ./paper/nota.tex
 38cd4f1fc0f2ef51e7add443f2eaf6ef15d843c479ce2298cfab5e044b6d85ad  ./paper/referencias.md
 dd134beeaa5de31242238878914f1e8ed91ab2017c040f811445f8cb837145e2  ./README.md
-b9a3aef5b7489f1524265e9732438c895dc5ca757754001ec67cba2cf071b9f8  ./results/calibracion/c16_groundtruth.md
+8bf030bcdc6e1cd0d69994e18f8ac7b3b1e80dce22aa4bfc15c0655035ff2d52  ./results/calibracion/c16_groundtruth.md
 075889b2c83f049b09acc559bd21a5a57630a16b82a13406fe13e7fef7e45883  ./results/calibracion/cubos/n28_K150_984cubos_suma252.txt
 a3424ed55b3c83addd7e23a90afd09b3e58942ea048535df25b3b37ef012f0c3  ./results/calibracion/cubos/n28_K150.cubes
 529e0ed2f1acc71c60f89d4bf8f32cc448bac388a62781d0df6245ce1df3eeec  ./results/calibracion/cubos/n28_SIMPLIFY_suma241_RECHAZADO.txt
@@ -75,6 +76,8 @@ d9c6ce72edb36fd8f5d9019ac728742454d083827de9de5e11f7743373c1a606  ./results/cali
 29f2ae0976d848a074b872a9907859b98f9a1fd77031b1a51d3bddc6fff7854f  ./results/calibracion/poscontrol_n42.log
 a376f57bf554268839c1a2900bf756c3e738f2ad87f484228da88f017bff7270  ./results/calibracion/poscontrol_n44_c4c8.json
 27a364c856291480e673545c473da9a24fa67a313392b6062eda7d5b06b38686  ./results/calibracion/poscontrol_n44.log
+7618b2442f9dec40eea269ebf9e6e18ace7c7d4dd5e3b2802123c557d0101f9c  ./results/calibracion/recount_nx_n14.txt
+46d2bfd995503dda9a62826f2bb60bbe797723b21597d16d8d72ab10c579df44  ./results/calibracion/recount_nx_n16.txt
 f6bf6e75956beb85e04fcf70036c107fbc99a59042a508d6d53e1192f1c5b094  ./results/calibracion/recount_nx_n18.txt
 d2759eea9c8f935b1450ba4b3302bf55685a5b2f02fe76b724dcaf4b86c5deda  ./results/calibracion/recount_nx_n20_r0.txt
 942d46afb97d2ebff4cf5b3fd2e13240d064ac08256b123d73c0963fc8421d67  ./results/calibracion/recount_nx_n20_r1.txt
@@ -142,4 +145,4 @@ ae360be12949401d76985e9cce2104bbb3797719ffa39ec90f44becdad6d2b66  ./src/recount_
 73d960c194127025c604b3580bfbb3fa589f90dc5c86245540469109c22c16a3  ./src/run_escalera.sh
 73f3112f3fa1d01be1e55ced24e4e7281a529a5cd72284e99d26710447b866f4  ./src/run_groundtruth.sh
 1569dd814c9c588c0d49f6705cb0464510b1e6dcbfec072dc0b0f1744dfe4c14  ./src/sms_run.py
-6d1233e8e23099dea2088337ea603eb8c66b79dd2c5172d085be4dd9b8979839  ./.zenodo.json
+86a8cfe5c039b806b38c45b14b8dd2b3fbfda5c51e9bfba33f2e8fc017ed47a8  ./.zenodo.json

@@ -1,0 +1,1 @@
+[n16-full] tot=4060 sinC16=219 mal_n=0 mal_grado=0
