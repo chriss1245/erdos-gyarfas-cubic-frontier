@@ -22,7 +22,7 @@
   "related_identifiers": [
     {
       "relation": "isSupplementTo",
-      "identifier": "https://github.com/christopher-manzanovimos_geci/erdos-gyarfas-cubic-frontier",
+      "identifier": "https://github.com/chriss1245/erdos-gyarfas-cubic-frontier",
       "resource_type": "software"
     },
     {
