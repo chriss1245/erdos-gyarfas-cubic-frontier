@@ -15,6 +15,8 @@ n ≤ 31 via SAT modulo symmetries, pending independent reproduction.
 
 Full write-up: `paper/nota.pdf`.
 
+Archived deposit: Zenodo, DOI [10.5281/zenodo.21976755](https://doi.org/10.5281/zenodo.21976755).
+
 ## Method
 
 One SAT-modulo-symmetries (SMS) call per even order n decides: *is there a connected

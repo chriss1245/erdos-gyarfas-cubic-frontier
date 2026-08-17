@@ -8,6 +8,7 @@ authors:
     affiliation: "WhiteBox ML, Madrid"
 version: "1.0.0"
 date-released: "2026-08-17"
+doi: "10.5281/zenodo.21976755"
 keywords:
   - Erdős–Gyárfás conjecture
   - cubic graphs
