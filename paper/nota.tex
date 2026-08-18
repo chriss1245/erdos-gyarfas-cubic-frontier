@@ -1,5 +1,4 @@
 % Nota corta — frontera cúbica de Erdős–Gyárfás mediante SMS calibrado.
-% Los campos [[...]] se rellenan antes de publicar.
 \documentclass[11pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amsthm,amssymb}
@@ -36,8 +35,9 @@ Consequently a smallest cubic counterexample, if one exists, has at least 42
 vertices. The search uses SAT modulo symmetries with a complete
 forbidden-subgraph propagator; unlike a decision procedure taken on trust, the
 instrument is first \emph{calibrated} against exhaustive enumeration: it is
-required to reproduce, exactly and as sets, thirteen reference censuses of cubic
-graphs, nine of which have nonzero answers, including a 348.7 core-hour
+required to reproduce thirteen reference censuses of cubic graphs, nine of
+which have nonzero answers and two of which are compared as sets of graphs
+rather than as counts. The ground truth includes a 348.7 core-hour exhaustive
 enumeration of order~30 carried out independently by the author. Positive
 controls are additionally run at the frontier orders themselves. All code,
 logs and censuses are available for independent verification.
@@ -67,9 +67,15 @@ general class and, a fortiori, for the cubic one; that work is a preprint under
 review, and its documentation states that no machine-checkable certificate is
 currently available for the claim, since the clauses contributed by the
 subgraph propagator are not RUP/RAT-derivable from the encoding, and that
-third-party reproduction is outstanding. Tranquilli~\cite{tranquilli2026}
-treats the cubic \emph{bipartite} subclass and reports the bound $n\ge 60$
-there.
+third-party reproduction is outstanding. A deposit of 4~August 2026 by
+Howe~\cite{howe2026} reports a computer-assisted proof of the order-30 cubic
+case by a different route (stratification by triangle count with a cycle-lift
+argument); the 348.7 core-hour exhaustive enumeration of order~30 used as
+ground truth here was completed in July 2026, independently of that work.
+Tranquilli~\cite{tranquilli2026} treats the cubic \emph{bipartite} subclass
+and reports the bound $n\ge 60$ there; a deposit of 17~August 2026 by
+Zhuge~\cite{zhuge2026} reports an extension of that subclass bound to
+$n\ge 70$.
 
 \paragraph{Result.}
 \begin{theorem}\label{thm:main}
@@ -145,7 +151,7 @@ calibration.
 \toprule
 Order & Forbidden & Expected & SMS \\
 \midrule
-$n=10$ & $C_{16}$ & 19 & 19 \\
+$n=10$ & $C_{16}$ & 19 (no 16-cycle fits) & 19 \\
 $n=14$ & $C_{16}$ & 509 (no 16-cycle fits) & 509 \\
 $n=16$ & $C_{16}$ & 219 & 219 \\
 $n=18$ & $C_{16}$ & 1471 & 1471 \\
@@ -163,13 +169,18 @@ emitted by SMS and by \texttt{geng} coincide after canonical labelling with
 \texttt{labelg}.}\label{tab:calib}
 \end{table}
 
-Two robustness axes were varied. Re-deciding with the totalizer cardinality
-encoding, a structurally different CNF for the same degree constraint,
-reproduces $251$ at $n=28$, $1471$ at $n=18$ and zero at $n=30$, $n=32$,
-$n=36$ and $n=40$; the last two are frontier orders, re-decided in 4143\,s and
-17\,207\,s against 3366\,s and 18\,922\,s for the sequential counter, so the
-largest order reported here has been decided twice with structurally different
-formulas. The comparison of graph sets at $n=24$ and $n=26$ is exact.
+Two robustness axes were varied. First, re-deciding with the totalizer
+cardinality encoding, a structurally different CNF for the same degree
+constraint, reproduces $251$ at $n=28$, $1471$ at $n=18$ and zero at $n=30$,
+$n=32$, $n=36$ and $n=40$; the last two are frontier orders, re-decided in
+4143\,s and 17\,207\,s against 3366\,s and 18\,922\,s for the sequential
+counter, so the largest order reported here has been decided twice with
+structurally different formulas. Second, re-deciding $n=32$ with the default
+minimality-check cutoff of $2\cdot10^5$, instead of the cutoff-free
+configuration used throughout, also returns zero, in 607\,s against 505\,s for
+the cutoff-free run; this axis is used only for unsatisfiable instances, since
+a truncated minimality check may admit isomorphic copies into nonzero counts.
+The comparison of graph sets at $n=24$ and $n=26$ is exact.
 
 \subsection{Positive controls at the frontier orders}
 
@@ -220,7 +231,7 @@ contributed by the subgraph propagator are not RUP/RAT-derivable from the
 encoding alone, so a generic checker cannot validate it; a certified-SMS
 treatment in the sense of~\cite{sms} is the natural strengthening and is not
 attempted here. What we do claim is a calibrated instrument: the pipeline
-reproduces every reference census available in this class, including eight with
+reproduces every reference census available in this class, including nine with
 nonzero answers and two at the level of graph sets, and demonstrates
 satisfiable behaviour live at the frontier orders. Order-dependent failure
 modes are guarded procedurally, not proved absent. Independent reproduction
@@ -249,7 +260,7 @@ computational pipeline was developed with the
 assistance of Claude (Anthropic); the author is responsible for the design of
 the experiments, the verification protocol and all claims made here.
 
-\begin{thebibliography}{9}
+\begin{thebibliography}{99}
 \bibitem{erdos93} P.~Erd\H{o}s, Some of my favorite solved and unsolved
   problems in graph theory, \emph{Quaestiones Math.} 16 (1993) 333--350.
 \bibitem{erdosproblems} T.~F. Bloom, Erd\H{o}s Problems, \#64,
@@ -269,6 +280,13 @@ the experiments, the verification protocol and all claims made here.
 \bibitem{tranquilli2026} J.~Tranquilli, A 60-vertex lower bound for cubic
   bipartite counterexamples to the Erd\H{o}s--Gy\'arf\'as conjecture,
   arXiv:2608.02675 (2026).
+\bibitem{howe2026} J.~D. Howe, The Erd\H{o}s--Gy\'arf\'as conjecture for cubic
+  graphs of order 30, Zenodo (2026),
+  \url{https://doi.org/10.5281/zenodo.21797776} (deposited 4 August 2026).
+\bibitem{zhuge2026} Y.~Zhuge, A 70-vertex lower bound for cubic bipartite
+  counterexamples to the Erd\H{o}s--Gy\'arf\'as conjecture, Zenodo (2026),
+  \url{https://doi.org/10.5281/zenodo.21981786} (reproducibility deposit
+  including the manuscript, 17 August 2026).
 \bibitem{sms} M.~Kirchweger and S.~Szeider, SAT modulo symmetries for graph
   generation and enumeration, \emph{ACM Trans. Comput. Logic} 25 (2024),
   Article~18.
