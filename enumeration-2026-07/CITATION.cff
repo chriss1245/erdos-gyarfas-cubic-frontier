@@ -2,13 +2,14 @@ cff-version: 1.2.0
 message: "If you use this code or data, please cite the accompanying note."
 title: "Erdős–Gyárfás conjecture: exhaustive verification for cubic graphs on at most 30 vertices"
 authors:
-  - family-names: Manzano          # [[completar nombre de pila]]
-    given-names: "[[PENDIENTE]]"
-    affiliation: "[[PENDIENTE: WhiteBox ML / Independent researcher]]"
+  - family-names: "Manzano Vimos"
+    given-names: "Christopher Andre"
+    orcid: "https://orcid.org/0009-0000-4270-4610"
+    affiliation: "WhiteBox ML, Madrid"
 date-released: 2026-07-26
 keywords:
   - Erdős–Gyárfás conjecture
   - cubic graphs
   - exhaustive search
   - graph generation
-license: MIT   # [[confirmar licencia]]
+license: MIT

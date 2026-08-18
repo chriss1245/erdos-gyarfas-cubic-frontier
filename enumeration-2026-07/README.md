@@ -9,7 +9,7 @@ Code, data and logs for the computational result:
 > has at least 32 vertices.
 
 This extends the exhaustive verification of Markström (2004), which covered cubic
-graphs on fewer than 29 vertices, and is the first movement of that frontier since.
+graphs on fewer than 29 vertices.
 
 ## Method in one paragraph
 
@@ -78,9 +78,14 @@ header contains its exact compilation command.
 
 ## Citation
 
-See `CITATION.cff`. Paper: [[arXiv id pending]].
+See `CITATION.cff`. This apparatus is archived as ground truth inside the deposit
+*Erdős–Gyárfás conjecture: calibrated SAT-modulo-symmetries verification for cubic
+graphs on at most 40 vertices* — Zenodo, DOI
+[10.5281/zenodo.21976755](https://doi.org/10.5281/zenodo.21976755); repository
+<https://github.com/chriss1245/erdos-gyarfas-cubic-frontier> (see `paper/nota.pdf`
+there for the accompanying note).
 
 ## Acknowledgements
 
 The search pipeline was developed with the assistance of Claude (Anthropic).
-[[Company acknowledgement pending]]
+The author thanks WhiteBox ML for supporting the publication of this work.
