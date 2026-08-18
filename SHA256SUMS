@@ -1,5 +1,5 @@
 2556562335df31983f794863099cef1fb22f45f309cb5707e484605b03129478  ./BUILD.md
-7959793b6130fb86c42082488b75af801cb0b3bada0746a19ec2bd4a332c2f3d  ./CITATION.cff
+35d441a5e1817a531ea79f69ab73c53f88ea32a69647ad6eedcea27f7b50e7a5  ./CITATION.cff
 efac61759784a8a73305b746838dc0db6c41c4812644b738f90356398fabffd4  ./data/c16-free-censuses/n14_no-c16.g6
 fdaf2919f113adb6977af85003f4b53e87367b84b3d5d3daf9a9831b495cd985  ./data/c16-free-censuses/n16_no-c16.g6
 4bf309865e84ad88b38bb9be5acd20c14f4bbb27c48d763df8cb2d184a19ab98  ./data/c16-free-censuses/n18_no-c16.g6
@@ -24,7 +24,7 @@ ae195faf41254ee7369d4827f11795a72fd4a59ebb523f3af54869fdfcb241fd  ./enumeration-
 9ad92303e658ac4e3a9169250ac4d1c4dd64b66ea7c146b65d1de6cfd0472feb  ./enumeration-2026-07/Makefile
 123f8569cbd22c3dd425e1441f6d405f6ec808364352b5ff1a0c19795ed7e0bb  ./enumeration-2026-07/README.md
 7529522bc05bdd2e21b08bb53d55ba1b0b0566ad904f91fd899b134a1b8c0350  ./enumeration-2026-07/scripts/verify_sweep.sh
-2187cfc21e9813888375b5f31d8a9b51714b9cf4d31a779e0f90384aeeec68f5  ./enumeration-2026-07/SHA256SUMS
+8fa92eee68c69265be460bbd8ab9d79150e895eadbf2fbe9b2f2d434dbee0d06  ./enumeration-2026-07/SHA256SUMS
 bb22b3caaf8294503b7b1ee0ef07af02e1a26156557c332396daade71775c935  ./enumeration-2026-07/src/check_pow2.py
 52f1cf28346e80a7ab37eb3d7eba1fa618fcb7815aae3826628c868692463af7  ./enumeration-2026-07/src/filter_eg.py
 1750b23fbd5c999848a077993d74ae25ad1fe727b49eb6e18f7c0f3e66f8a6c9  ./enumeration-2026-07/src/prune_c8.c
@@ -33,13 +33,14 @@ bb22b3caaf8294503b7b1ee0ef07af02e1a26156557c332396daade71775c935  ./enumeration-
 8a9c95be36524bb1d3e179d7d5ae23d1d12064f3c0d0346022a696e132786225  ./enumeration-2026-07/tests/count_c8free.py
 e87aee4ddc394ee6d3d839a1acea6801440a7649ffc78e19b3447385878aba4a  ./enumeration-2026-07/tests/run_tests.sh
 a8f2ef2c6e50eeae9f302f876ec7fd11c50457c4e6bdb282740e94fb16bad6e9  ./enumeration-2026-07/tests/test_detectors.py
+385b33bbb6cfe4d58b7500e41b05772c5881a577835959356911de2251745c15  ./.gitignore
 b14dd80e569ac0f7408f1ba7d42aed91d6680d04e98711f163f0a8c65d4ce08a  ./LICENSE
 1dbd08e8d3882a3016b33e878762e95a62816ee3de4a133af143e8bd9c31fa26  ./logs/sms_build.log
 c5e6103f19c246465c0a7c8ec1ac619bb1f1567b084528572d7902a991c3aad6  ./paper/nota.pdf
 fcb564dc1bb2828516651e17afd89d9fc89dab5c9ef1b653506a8e05b72ac0e6  ./paper/nota.tex
 38cd4f1fc0f2ef51e7add443f2eaf6ef15d843c479ce2298cfab5e044b6d85ad  ./paper/referencias.md
-0d632052ec60a6a9f9baaab904ea47a6a4f6f56de897d7d2c82375af72184572  ./README.md
-8bf030bcdc6e1cd0d69994e18f8ac7b3b1e80dce22aa4bfc15c0655035ff2d52  ./results/calibracion/c16_groundtruth.md
+70d364414c2db73e13cc52d0d22df4fc3a1c925c50636ce6e9a55c2ef2c53a26  ./README.md
+d2d3ce9eca186749daee54f41ec317689de565c3d18cce8f9617ee3ec62af91e  ./results/calibracion/c16_groundtruth.md
 075889b2c83f049b09acc559bd21a5a57630a16b82a13406fe13e7fef7e45883  ./results/calibracion/cubos/n28_K150_984cubos_suma252.txt
 a3424ed55b3c83addd7e23a90afd09b3e58942ea048535df25b3b37ef012f0c3  ./results/calibracion/cubos/n28_K150.cubes
 529e0ed2f1acc71c60f89d4bf8f32cc448bac388a62781d0df6245ce1df3eeec  ./results/calibracion/cubos/n28_SIMPLIFY_suma241_RECHAZADO.txt
@@ -91,7 +92,7 @@ b06f6c4391ac92b570f480a80a130c005f9f90701bfc109d85fd4248c02f1de7  ./results/cali
 e3c6bf2a52b8229c3f6ff54c523b5fcf94ecef52195fc3f7ef546ceb9788331e  ./results/calibracion/recount_nx_n22_c3.txt
 92e41ba1087a1c0a42f85fabd5f7da1f02771499377144b44f7a427afb0cbfd4  ./results/calibracion/recount_nx_n22_c4.txt
 13048931258e857aac2922a1ff1725ae0552ff7a7aa9806984e3b1adbe6609c4  ./results/calibracion/recount_nx_n22_c5.txt
-81f57978a47538c428c89dc4ec66782fa860bdcba872ae3ca4850d2afb54b8ef  ./results/calibracion/RESULTADOS.md
+b5fc35e0b3f27a5f805f05b8500bf9ab76ec7b116381fc5dc931adb12aa73bae  ./results/calibracion/RESULTADOS.md
 5255d35700fb6b68405bd7f302126e34d6ade13264ab7fa452012e98a0f5f583  ./results/calibracion/robust_cutoff_n32.json
 42941cb99c6b255c3dd0030d705ecaeb293876b2c306336627893c8bee940f00  ./results/calibracion/robust_totalizer_n18_c16.json
 928980e450c9477d41ff216319017426d49a1e013c557632533494a3af109729  ./results/calibracion/robust_totalizer_n28_c4c8.json
@@ -137,6 +138,7 @@ a6eb2fa924bdfd8ad4faa470a7870c519c271464cfae88dcc3a6fedb60f8c4f1  ./results/esca
 3f49e928c41f3692b595570119dadf7f8b0e72e022f238e550c248251249f825  ./results/escalera/n40.json
 19fa901855802c04c80319669357b3afffcd9f64ef8f17482eec8ee153e5d97d  ./results/escalera/n40.log
 254066956bfe03cc96e0bd9007a71e84cd42ea39350fe322661962509d4a2db7  ./src/check_pow2.py
+2944e871a66ad07fe55395ea098b3d40c02a8c016d53871e44d74f78137ecded  ./src/check_survivors.py
 c03e982006e000ccebb5bcac46a7be75521b2ebebf46446f90144f9060795b8f  ./src/count_c16free.py
 52f1cf28346e80a7ab37eb3d7eba1fa618fcb7815aae3826628c868692463af7  ./src/filter_eg.py
 ae360be12949401d76985e9cce2104bbb3797719ffa39ec90f44becdad6d2b66  ./src/recount_nx.py

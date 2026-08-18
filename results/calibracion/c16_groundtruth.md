@@ -43,13 +43,14 @@ SMS (52.781) NO cuenta como verificación del ancla: SMS es el instrumento bajo 
 Ficheros: `recount_nx_n14.txt`, `recount_nx_n16.txt`, `recount_nx_n18.txt`,
 `recount_nx_n20_r*.txt`, `recount_nx_n22_c*.txt`.
 
-Grafos volcados en `n14_no-c16.g6`, `n16_no-c16.g6`, `n18_no-c16.g6`, `n20_no-c16.g6` y
-`groundtruth_n22/n22_no-c16_r*.g6` (este directorio) para comparar conjuntos, no solo
-cardinales, vía `labelg`.
+Grafos volcados en `data/c16-free-censuses/` (raíz del repo): `n14_no-c16.g6`,
+`n16_no-c16.g6`, `n18_no-c16.g6`, `n20_no-c16.g6` y `n22_no-c16_r*.g6`, para comparar
+conjuntos, no solo cardinales, vía `labelg`. Los logs crudos del troceado de n=22
+(totales por trozo y volcados) están en `groundtruth_n22/` (este directorio).
 
 ## Uso previsto
 
-Exigir a SMS (clase cúbica, conexos, prohibiendo **solo** C16) exactamente 219, 1.471 y
-12.709 en n=16, 18 y 20. n=18 y n=20 son los tests decisivos: ahí C16 es un ciclo propio, el
-mismo régimen en el que trabajaría el propagador en n=32. n=14 solo comprueba que el
-propagador no dispara cuando el patrón no cabe.
+Exigir a SMS (clase cúbica, conexos, prohibiendo **solo** C16) exactamente 219, 1.471,
+12.709 y 52.781 en n=16, 18, 20 y 22. n=18-22 son los tests decisivos: ahí C16 es un ciclo
+propio, el mismo régimen en el que trabajaría el propagador en n=32. n=14 solo comprueba
+que el propagador no dispara cuando el patrón no cabe.

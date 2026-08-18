@@ -11,7 +11,9 @@ Code, data and logs for the computational result:
 Previous exhaustive bounds for the cubic class: Markström (2004) covered n ≤ 28;
 the July 2026 enumeration included here (`enumeration-2026-07/`) covered n = 30.
 Balaji (2026, Zenodo 10.5281/zenodo.21190438) reports minimum degree ≥ 3 up to
-n ≤ 31 via SAT modulo symmetries, pending independent reproduction.
+n ≤ 31 via SAT modulo symmetries, pending independent reproduction. Howe (2026,
+Zenodo 10.5281/zenodo.21797776, deposited 4 August) reports a computer-assisted
+proof of the order-30 cubic case by a different route.
 
 Full write-up: `paper/nota.pdf`.
 
@@ -63,6 +65,10 @@ Robustness and controls:
 - **Totalizer re-decision**: a structurally different CNF reproduces 251 (n=28),
   1471 (n=18), and zero at n = 30, 32, 36 **and 40** — the headline order is decided
   twice (17 207 s vs 18 922 s).
+- **Cutoff re-decision**: n = 32 re-decided with the default minimality-check cutoff
+  (200000) instead of `--cutoff 0` also returns zero (607 s vs 505 s). Used only for
+  UNSAT instances: a truncated minimality check may admit isomorphic copies into
+  nonzero counts.
 - **Positive controls at and beyond the frontier**: forbidding only {C4, C8}, where
   solutions must exist, SMS returns SAT at n = 32, 34, 36, 38, 40, 42, 44. Zeros are
   therefore not an artifact of vacuous unsatisfiability at large orders.
@@ -107,6 +113,12 @@ See `BUILD.md`. The frontier runs are single commands, e.g.:
 python sms_run.py --n 40 --forbid 4,8,16 --budget 604800 --json n40.json
 ```
 
+The `src/run_*.sh` drivers are shipped verbatim as they were run (from `src/`, with a
+hard-coded conda python path) and write to `resultados/…`; the archived copies of
+their outputs live under `results/…`. If a ladder order ever returned survivors,
+`run_escalera.sh` tests the decoupled large powers of two (C32, C64) on them via
+`src/check_survivors.py`.
+
 ## What is not claimed
 
 No machine-checkable proof certificate accompanies the UNSAT results: clauses
@@ -114,6 +126,10 @@ contributed by the subgraph propagator are not RUP/RAT-derivable from the encodi
 alone, so a generic checker cannot validate them. The claim rests on a calibrated
 instrument, not a certified one; see the paper's "What is not claimed" section.
 Independent reproduction is welcome — the JSONs record exact command lines.
+
+## License and citation
+
+MIT License (see `LICENSE`). To cite, see `CITATION.cff`.
 
 ## Author
 
